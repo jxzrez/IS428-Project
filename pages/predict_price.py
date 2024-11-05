@@ -84,12 +84,14 @@ with st.form("predict_form"):
     cbd_dist = st.slider("CBD Distance (m)", 0, 22406, 10000)
     floor_area_sqm = st.slider("Floor Area (sqm)", 29.4, 188.5, 110.0)
     remaining_lease = st.slider("Remaining Lease (years)", 0, 99, 50)
-    year = st.number_input("Year", min_value=2000, max_value=2030, value=2023)
+    year = st.number_input("Year", min_value=2000, max_value=2100, value=2024)
     distance_to_closest_school = st.slider("Distance to Closest School (km)", 0.0, 3.36, 1.5)
     distance_to_closest_mall = st.slider("Distance to Closest Mall (km)", 0.0, 3.47, 1.6)
     interest_rate = st.slider("Interest Rate (%)", 0.0, 3.2, 1.6)
-    employment_rate = st.slider("Employment Rate (%)", 0, 100, 50)
-    population = st.number_input("Population", min_value=0, value=100000)
+    employment_rate = st.slider("Employment Rate (%)", 0, 100, 66)
+    st.caption("  Singapore's employment rate is 66% as of 2023")
+    population = st.number_input("Population", min_value=0, value=5918000)
+    st.caption("  Singapore's population is 5.918 million as of 2023")
 
     submitted = st.form_submit_button("Predict")
 
