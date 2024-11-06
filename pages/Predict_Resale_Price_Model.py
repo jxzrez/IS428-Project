@@ -74,6 +74,14 @@ def predict_price(input_data):
 st.set_page_config(page_title="HDB Resale Price Analysis - Predict Price")
 
 st.title("Predict HDB Resale Price")
+st.markdown("""
+    <style>
+    [data-testid=column]:nth-of-type(1) [data-testid=stMainBlockContainer]{
+        gap: 0rem;
+        padding: 0rem;
+    }
+    </style>
+    """,unsafe_allow_html=True)
 
 with st.form("predict_form"):
     town = st.selectbox("Town", all_town_categories)
