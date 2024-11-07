@@ -19,7 +19,7 @@ url3 = "https://public.tableau.com/shared/Z92XZSXQR?:display_count=n&:origin=viz
 # Embed first Tableau visualization
 my_js1 = f"""
 <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
-<div id="vizContainer1""></div>
+<div id="vizContainer1" style="width:675px; height:1450px"></div>
 <script>
     var containerDiv = document.getElementById('vizContainer1');
     var url = "{url1}";
@@ -32,12 +32,12 @@ my_js1 = f"""
     var viz = new tableau.Viz(containerDiv, url, options);
 </script>
 """
-html(my_js1, height=1450)
+html(my_js1, height=800)
 
 # Embed second Tableau visualization
 my_js2 = f"""
 <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
-<div id="vizContainer2"</div>
+<div id="vizContainer2" style="width:675px; height:1450px"></div>
 <script>
     var containerDiv = document.getElementById('vizContainer2');
     var url = "{url2}";
@@ -55,7 +55,7 @@ html(my_js2, height=850)
 # Embed third Tableau visualization
 my_js3 = f"""
 <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
-<div id="vizContainer3"></div>
+<div id="vizContainer3" style="width:675px; height:1450px"></div>
 <script>
     var containerDiv = document.getElementById('vizContainer3');
     var url = "{url3}";
