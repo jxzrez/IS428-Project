@@ -71,9 +71,9 @@ def predict_price(input_data):
     prediction = model.predict(input_df)
     return float(prediction[0])
 
-st.set_page_config(page_title="HDB Resale Price Analysis - Predict Price")
+st.set_page_config(page_title="Price Forecast Tool")
 
-st.title("Predict HDB Resale Price")
+st.title("Price Forecast Tool")
 st.markdown("""
     <style>
     [data-testid=column]:nth-of-type(1) [data-testid=stMainBlockContainer]{

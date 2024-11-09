@@ -1,7 +1,7 @@
 import streamlit as st
 from streamlit.components.v1 import html
 
-st.set_page_config(page_title="HDB Resale Price Analysis - Category Dashboard", layout="wide")
+st.set_page_config(page_title="Infrastructure Insights", layout="wide")
 st.markdown("""
     <style>
     [data-testid=column]:nth-of-type(1) [data-testid=stMainBlockContainer]{
@@ -10,15 +10,15 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-st.title("HDB Resale Price Analysis - Category Dashboard")
+st.title("Infrastructure Insights")
 
-# Tableau visualization URL
-url = "https://public.tableau.com/shared/GY9GKQPM5?:display_count=n&:origin=viz_share_link"
+# New Tableau visualization URL
+url = "https://public.tableau.com/views/FINALExtractDistancetofacilitiesadded/3_MRT?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
 
-# Embed Tableau visualization
+# Embed new Tableau visualization
 my_js = f"""
 <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
-<div id="vizContainer" style="width:675px; height:1200px"></div>
+<div id="vizContainer" style="width:675px; height:1450px"></div>
 <script>
     var containerDiv = document.getElementById('vizContainer');
     var url = "{url}";
@@ -31,4 +31,4 @@ my_js = f"""
     var viz = new tableau.Viz(containerDiv, url, options);
 </script>
 """
-html(my_js, height=1200)
+html(my_js, height=900)
