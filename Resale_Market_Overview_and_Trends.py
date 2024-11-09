@@ -1,7 +1,7 @@
 import streamlit as st
 from streamlit.components.v1 import html
 
-st.set_page_config(page_title="IS428 Project", layout="wide")
+st.set_page_config(page_title="Resale Market Overview and Trends", layout="wide")
 st.markdown("""
     <style>
     [data-testid=column]:nth-of-type(1) [data-testid=stMainBlockContainer]{
@@ -14,7 +14,7 @@ st.markdown("""
 st.experimental_set_query_params(page="overview_map")
 
 # Load the Overview Map page content
-st.title("HDB Resale Price Analysis - Overview Map")
+st.title("Resale Market Overview and Trends")
 
 # First Tableau visualization URL
 url1 = "https://public.tableau.com/views/FINALExtractDistancetofacilitiesadded/1_MapDashboard?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
