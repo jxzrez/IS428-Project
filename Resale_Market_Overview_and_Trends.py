@@ -16,6 +16,10 @@ st.experimental_set_query_params(page="overview_map")
 # Load the Overview Map page content
 st.title("Resale Market Overview and Trends")
 
+# Caption 
+st.markdown("## Map Dashboard")
+st.markdown("##### The Housing Affordability Index or HFI is a measure of affordability by taking the ratio of the house price to total annual income. A HFI above 5 is considered unaffordable and the number generally indicates the number of years needed to save for a house without taking loans.")
+
 # First Tableau visualization URL
 url1 = "https://public.tableau.com/views/FINALExtractDistancetofacilitiesadded/1_MapDashboard?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
 
@@ -37,6 +41,12 @@ my_js1 = f"""
 """
 html(my_js1, height=800)
 
+st.subheader("", divider="orange")
+st.markdown("## Treemap Dashboard")
+st.markdown("##### Treemap displays the proportion of all flats sold by town, including the average resale price")
+st.markdown("""
+    *Identify the region you are interested in. Hover over your desired area and you will be able to see the town, flat type and average resale price. The resale price is color-coded in the top right corner.*
+    """)
 # Second Tableau visualization URL
 url2 = "https://public.tableau.com/views/FINALExtractDistancetofacilitiesadded/1_TreemapDashboard?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
 
@@ -60,6 +70,13 @@ html(my_js2, height=830)
 
 # Third Tableau visualization URL
 url3 = "https://public.tableau.com/views/FINALExtractDistancetofacilitiesadded/1_TimeSeries?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+
+st.subheader("", divider="orange")
+st.markdown("## Time Series Dashboard")
+st.markdown("##### Economic indicators such as population growth, employment rate are plotted with resale price against year. Interest Rate is the Singapore Overnight Rate Average for loans published by the MAS. Due to the lack of data, there are some gaps in the line graphs.")
+st.markdown("""
+    *Use the filter below to adjust the years and see how resale trends change with each factor (interest rate, employment rate, population). For each graph, hover over the lines to view additional information*
+    """)
 
 # Embed third Tableau visualization
 my_js3 = f"""

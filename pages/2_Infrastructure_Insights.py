@@ -11,6 +11,15 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 st.title("Infrastructure Insights")
+st.markdown("""##### This is a toggling dashboard between MRT, School or Mall plotted against resale price which can be swapped by clicking on the 3 icons next to the title against resale price.To conduct proper analysis of each factor, we suggest controlling for other variables as they may interact and obscure the effect of MRT distance.""")
+st.markdown("""*Use the filters at the top to adjust the range of years, type of flat and town that you are interested in investigating (For storey-range, optimal analysis would be 7 towns at a time for neatness). Hovering over the graphs and trend lines will give additional information.*
+
+*For example:*
+- *Fix year to 2013-2015*
+- *Only select 3 and 4 room flats*
+- *Restrict the storey range to 15 floors*
+- *Iterate through each town to see the R-square (explained variation) of the factor in the x-axis against Average resale price.*
+            """)
 
 # New Tableau visualization URL
 url = "https://public.tableau.com/views/FINALExtractDistancetofacilitiesadded/3_MRT?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
@@ -32,3 +41,9 @@ my_js = f"""
 </script>
 """
 html(my_js, height=900)
+
+st.markdown("## Analysis Findings")
+st.markdown("##### The following is a visualisation of R-squared for each factor against resale price by iterating through each town with the exact parameters above, and visualising them on a map. Our threshold for a significant enough R-squared is 0.3, and the color legends for all 3 have this value as a centre")
+
+st.markdown("## MRT")
+# st.image("Mall Map.png")
