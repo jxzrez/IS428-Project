@@ -27,7 +27,7 @@ url = "https://public.tableau.com/views/FINALExtractDistancetofacilitiesadded/3_
 # Embed new Tableau visualization
 my_js = f"""
 <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
-<div id="vizContainer" style="width:675px; height:1450px"></div>
+<div id="vizContainer" style="width:675px; height:1000px"></div>
 <script>
     var containerDiv = document.getElementById('vizContainer');
     var url = "{url}";
@@ -40,10 +40,20 @@ my_js = f"""
     var viz = new tableau.Viz(containerDiv, url, options);
 </script>
 """
-html(my_js, height=900)
+html(my_js, height=800)
+st.subheader("", divider="orange")
 
 st.markdown("## Analysis Findings")
 st.markdown("##### The following is a visualisation of R-squared for each factor against resale price by iterating through each town with the exact parameters above, and visualising them on a map. Our threshold for a significant enough R-squared is 0.3, and the color legends for all 3 have this value as a centre")
 
 st.markdown("## MRT")
-# st.image("Mall Map.png")
+st.markdown("Noteworthy areas where MRT distance has a factor in influencing resale price are Sembawang, Choa Chu Kang, Bukit Panjang, Bukit Timah, Serangoon, Sengkang, Pasir Ris")
+st.image("https://github.com/jxzrez/IS428-Project/blob/main/pages/MRT%20Map.png?raw=true")
+
+st.markdown("## Mall")
+st.markdown("Mall distance was deemed to not be a factor driving resale price except in Bukit Timah and to a lesser extent Woodlands")
+st.image("https://github.com/jxzrez/IS428-Project/blob/main/pages/Mall%20Map.png?raw=true")
+
+st.markdown("## School")
+st.markdown("School distance was deemed to have no effect on resale price due to the weak R-squared, except for Marine Parade")
+st.image("https://github.com/jxzrez/IS428-Project/blob/main/pages/School%20Map.png?raw=true")

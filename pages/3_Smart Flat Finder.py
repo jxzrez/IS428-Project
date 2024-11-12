@@ -10,6 +10,9 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 st.title("Smart Flat Finder")
+st.markdown("## Consumer Map Dashboard")
+st.markdown("##### This is a consumer-friendly dashboard to search for a desired flat based on multiple criteria a user might have when inputted into the filters.")
+st.markdown("*Choose your desired  flat type(s), storey range, town and use the other filters for more specificity (Lease remaining, Square Metre, CBD distance, distance from school/mall/mrt etc.). Hover over any points to view the address to see relevant information, including average price.*")
 
 # First Tableau visualization URL
 url1 = "https://public.tableau.com/views/FINALExtractDistancetofacilitiesadded/4_ConsumerMapDashboard?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
@@ -31,6 +34,11 @@ my_js1 = f"""
 </script>
 """
 html(my_js1, height=800)
+
+st.subheader("", divider="orange")
+st.markdown("## Average Resale Price By Town")
+st.markdown("##### This is a chart displaying the average resale price by town for consumer use.")
+st.markdown("*Users can adjust the filters above, choosing your desired flat type, storey range and years to view the town and average resale price across all this data, or with specific criteria eg: Only above the 15th floor.*")
 
 # Second Tableau visualization URL
 url2 = "https://public.tableau.com/views/FINALExtractDistancetofacilitiesadded/4_AvgResalePriceByTown?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"

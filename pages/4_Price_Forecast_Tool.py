@@ -74,14 +74,7 @@ def predict_price(input_data):
 st.set_page_config(page_title="Price Forecast Tool")
 
 st.title("Price Forecast Tool")
-st.markdown("""
-    <style>
-    [data-testid=column]:nth-of-type(1) [data-testid=stMainBlockContainer]{
-        gap: 0rem;
-        padding: 0rem;
-    }
-    </style>
-    """,unsafe_allow_html=True)
+st.markdown("This is a price forecasting tool trained using a machine learning regression model to predict prices beyond the range of the original analysis which stopped at 2023. By entering the various parameters, including economic indicators that can be obtained from the earlier tabs, with a r-square of 0.86 the flat resale price.")
 
 with st.form("predict_form"):
     town = st.selectbox("Town", all_town_categories)
