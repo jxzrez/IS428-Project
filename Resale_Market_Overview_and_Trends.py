@@ -21,7 +21,7 @@ st.markdown("## Map Dashboard")
 st.markdown("##### The Housing Affordability Index or HFI is a measure of affordability by taking the ratio of the house price to total annual income. A HFI above 5 is considered unaffordable and the number generally indicates the number of years needed to save for a house without taking loans.")
 
 # First Tableau visualization URL
-url1 = "https://public.tableau.com/views/FINALExtractDistancetofacilitiesadded/1_MapDashboard?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+url1 = "https://public.tableau.com/views/AnalysisofSingaporesHDBResalePrices1990-2023/1_MapDashboard?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
 
 # Embed first Tableau visualization
 my_js1 = f"""
@@ -48,7 +48,7 @@ st.markdown("""
     *Identify the region you are interested in. Hover over your desired area and you will be able to see the town, flat type and average resale price. The resale price is color-coded in the top right corner.*
     """)
 # Second Tableau visualization URL
-url2 = "https://public.tableau.com/views/FINALExtractDistancetofacilitiesadded/1_TreemapDashboard?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+url2 = "https://public.tableau.com/views/AnalysisofSingaporesHDBResalePrices1990-2023/1_TreemapDashboard?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
 
 # Embed second Tableau visualization
 my_js2 = f"""
@@ -69,7 +69,7 @@ my_js2 = f"""
 html(my_js2, height=830)
 
 # Third Tableau visualization URL
-url3 = "https://public.tableau.com/views/FINALExtractDistancetofacilitiesadded/1_TimeSeries?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+url3 = "https://public.tableau.com/views/AnalysisofSingaporesHDBResalePrices1990-2023/1_TimeSeries?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
 
 st.subheader("", divider="orange")
 st.markdown("## Time Series Dashboard")

@@ -13,7 +13,7 @@ st.markdown("""
 st.title("Resale Price Drivers")
 
 # First Tableau visualization URL
-url1 = "https://public.tableau.com/views/FINALExtractDistancetofacilitiesadded/2_MatrixDashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+url1 = "https://public.tableau.com/views/AnalysisofSingaporesHDBResalePrices1990-2023/2_MatrixDashboard1?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
 
 st.markdown("## Scatter Plot Matrix 1")
 st.markdown("##### A scatterplot matrix of various features of housing against resale price. Noteworthy relationships are Remaining Lease & Floor Area Sqm correlating with resale price. MRT, School & Mall analysis is on the “Infrastructure Insights” page.")
@@ -39,7 +39,7 @@ html(my_js1, height=800)
 
 
 # Second Tableau visualization URL
-url2 = "https://public.tableau.com/views/FINALExtractDistancetofacilitiesadded/2_MatrixDashboard2?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+url2 = "https://public.tableau.com/views/AnalysisofSingaporesHDBResalePrices1990-2023/2_MatrixDashboard2?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
 
 st.subheader("", divider="orange")
 st.markdown("## Scatter Plot Matrix 2")

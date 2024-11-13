@@ -15,7 +15,7 @@ st.markdown("##### This is a consumer-friendly dashboard to search for a desired
 st.markdown("*Choose your desired  flat type(s), storey range, town and use the other filters for more specificity (Lease remaining, Square Metre, CBD distance, distance from school/mall/mrt etc.). Hover over any points to view the address to see relevant information, including average price.*")
 
 # First Tableau visualization URL
-url1 = "https://public.tableau.com/views/FINALExtractDistancetofacilitiesadded/4_ConsumerMapDashboard?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+url1 = "https://public.tableau.com/shared/RSN7RF389?:display_count=n&:origin=viz_share_link"
 
 # Embed first Tableau visualization
 my_js1 = f"""
@@ -41,7 +41,7 @@ st.markdown("##### This is a chart displaying the average resale price by town f
 st.markdown("*Users can adjust the filters above, choosing your desired flat type, storey range and years to view the town and average resale price across all this data, or with specific criteria eg: Only above the 15th floor.*")
 
 # Second Tableau visualization URL
-url2 = "https://public.tableau.com/views/FINALExtractDistancetofacilitiesadded/4_AvgResalePriceByTown?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+url2 = "https://public.tableau.com/shared/FC5KFQNN9?:display_count=n&:origin=viz_share_link"
 
 # Embed second Tableau visualization
 my_js2 = f"""

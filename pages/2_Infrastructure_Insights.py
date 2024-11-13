@@ -22,7 +22,7 @@ st.markdown("""*Use the filters at the top to adjust the range of years, type of
             """)
 
 # New Tableau visualization URL
-url = "https://public.tableau.com/views/FINALExtractDistancetofacilitiesadded/3_MRT?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+url = "https://public.tableau.com/views/AnalysisofSingaporesHDBResalePrices1990-2023/3_MRT?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
 
 # Embed new Tableau visualization
 my_js = f"""
