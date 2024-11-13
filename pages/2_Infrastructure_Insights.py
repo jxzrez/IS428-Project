@@ -11,8 +11,8 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 st.title("Infrastructure Insights")
-st.markdown("""##### This is a toggling dashboard between MRT, School or Mall plotted against resale price which can be swapped by clicking on the 3 icons next to the title against resale price.To conduct proper analysis of each factor, we suggest controlling for other variables as they may interact and obscure the effect of MRT distance.""")
-st.markdown("""*Use the filters at the top to adjust the range of years, type of flat and town that you are interested in investigating (For storey-range, optimal analysis would be 7 towns at a time for neatness). Hovering over the graphs and trend lines will give additional information.*
+st.markdown("""##### This is a toggling dashboard between MRT, School or Mall plotted against resale price which can be swapped by clicking on the 3 icons next to the title against resale price. To conduct proper analysis of each factor, we suggest controlling for other variables as they may interact and obscure the effect of MRT distance.""")
+st.markdown("""*Use the white icons in the dashboard to swap between various views. Adjust the filters to modify the year-range, flat-type, town, storey-range and distances.*
 
 *For example:*
 - *Fix year to 2013-2015*

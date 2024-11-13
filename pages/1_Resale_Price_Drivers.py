@@ -17,7 +17,7 @@ url1 = "https://public.tableau.com/views/AnalysisofSingaporesHDBResalePrices1990
 
 st.markdown("## Scatter Plot Matrix 1")
 st.markdown("##### A scatterplot matrix of various features of housing against resale price. Noteworthy relationships are Remaining Lease & Floor Area Sqm correlating with resale price. MRT, School & Mall analysis is on the “Infrastructure Insights” page.")
-st.markdown("*Use the filters to adjust the range of years, type of flat and town that you are interested in investigating. Hover over the trendline to see the R-squared, which is the extent to which this variable can be said to explain the change in resale price.*")
+st.markdown("*Use the filters to adjust the year range, flat type, and town of interest. Hover over the trendline to view the R-squared value, which indicates how well this variable can explain variations in resale price.*")
 
 # Embed first Tableau visualization
 my_js1 = f"""
