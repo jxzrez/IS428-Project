@@ -68,8 +68,9 @@ my_js1 = f"""
 """
 html(my_js1, height=800)
 
-st.markdown("## Mall")
-st.markdown("Mall distance was deemed to not be a factor driving resale price except in Bukit Timah and to a lesser extent Woodlands")
+
+st.markdown("## School")
+st.markdown("School distance was deemed to have no effect on resale price due to the weak R-squared, except for Marine Parade")
 url2 = "https://public.tableau.com/shared/YS7H8876G?:display_count=n&:origin=viz_share_link"
 
 # Embed new Tableau visualization
@@ -90,8 +91,8 @@ my_js2 = f"""
 """
 html(my_js2, height=800)
 
-st.markdown("## School")
-st.markdown("School distance was deemed to have no effect on resale price due to the weak R-squared, except for Marine Parade")
+st.markdown("## Mall")
+st.markdown("Mall distance was deemed to not be a factor driving resale price except in Bukit Timah and to a lesser extent Woodlands")
 url3 = "https://public.tableau.com/shared/76TT4YMH5?:display_count=n&:origin=viz_share_link"
 
 # Embed new Tableau visualization
