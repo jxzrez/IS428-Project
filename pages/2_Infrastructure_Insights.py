@@ -48,12 +48,66 @@ st.markdown("##### The following is a visualisation of R-squared for each factor
 
 st.markdown("## MRT")
 st.markdown("Noteworthy areas where MRT distance has a factor in influencing resale price are Sembawang, Choa Chu Kang, Bukit Panjang, Bukit Timah, Serangoon, Sengkang, Pasir Ris")
-st.image("https://github.com/jxzrez/IS428-Project/blob/main/pages/MRT%20Map.png?raw=true")
+url1 = "https://public.tableau.com/shared/3DPJKJSWQ?:display_count=n&:origin=viz_share_link"
+
+# Embed new Tableau visualization
+my_js1 = f"""
+<script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+<div id="vizContainer" style="width:675px; height:1000px"></div>
+<script>
+    var containerDiv = document.getElementById('vizContainer');
+    var url = "{url1}";
+    var options = {{
+        hideTabs: true,
+        onFirstInteractive: function() {{
+            console.log("Dashboard is interactive");
+        }}
+    }};
+    var viz = new tableau.Viz(containerDiv, url, options);
+</script>
+"""
+html(my_js1, height=800)
 
 st.markdown("## Mall")
 st.markdown("Mall distance was deemed to not be a factor driving resale price except in Bukit Timah and to a lesser extent Woodlands")
-st.image("https://github.com/jxzrez/IS428-Project/blob/main/pages/Mall%20Map.png?raw=true")
+url2 = "https://public.tableau.com/shared/YS7H8876G?:display_count=n&:origin=viz_share_link"
+
+# Embed new Tableau visualization
+my_js2 = f"""
+<script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+<div id="vizContainer" style="width:675px; height:1000px"></div>
+<script>
+    var containerDiv = document.getElementById('vizContainer');
+    var url = "{url2}";
+    var options = {{
+        hideTabs: true,
+        onFirstInteractive: function() {{
+            console.log("Dashboard is interactive");
+        }}
+    }};
+    var viz = new tableau.Viz(containerDiv, url, options);
+</script>
+"""
+html(my_js2, height=800)
 
 st.markdown("## School")
 st.markdown("School distance was deemed to have no effect on resale price due to the weak R-squared, except for Marine Parade")
-st.image("https://github.com/jxzrez/IS428-Project/blob/main/pages/School%20Map.png?raw=true")
+url3 = "https://public.tableau.com/shared/76TT4YMH5?:display_count=n&:origin=viz_share_link"
+
+# Embed new Tableau visualization
+my_js3 = f"""
+<script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+<div id="vizContainer" style="width:675px; height:1000px"></div>
+<script>
+    var containerDiv = document.getElementById('vizContainer');
+    var url = "{url3}";
+    var options = {{
+        hideTabs: true,
+        onFirstInteractive: function() {{
+            console.log("Dashboard is interactive");
+        }}
+    }};
+    var viz = new tableau.Viz(containerDiv, url, options);
+</script>
+"""
+html(my_js3, height=800)
