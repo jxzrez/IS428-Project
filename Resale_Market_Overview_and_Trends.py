@@ -10,9 +10,6 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-# Automatically set the query parameter to open overview_map.py
-st.experimental_set_query_params(page="overview_map")
-
 # Load the Overview Map page content
 st.title("Resale Market Overview and Trends")
 
