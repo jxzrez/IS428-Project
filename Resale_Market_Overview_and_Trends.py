@@ -15,7 +15,7 @@ st.title("Resale Market Overview and Trends")
 
 # Caption 
 st.markdown("## Map Dashboard")
-st.markdown("##### The Housing Affordability Ratio or HFI is a measure of affordability by taking the ratio of the house price to total annual income. A HFI above 5 is considered unaffordable and the number generally indicates the number of years needed to save for a house without taking loans.")
+st.markdown("##### The Housing Affordability Ratio (HAR) is a measure of affordability by taking the ratio of the house price to total annual income. A HAR above 5 is considered unaffordable and the number generally indicates the number of years needed to save for a house without taking loans.")
 
 # First Tableau visualization URL
 url1 = "https://public.tableau.com/views/AnalysisofSingaporesHDBResalePrices1990-2023/1_MapDashboard?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
